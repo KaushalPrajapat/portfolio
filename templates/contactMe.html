@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+
+{% block contactMe %}
+<div class="page6" id="page6">
+    <h1>CONTACT ME</h1>
+    <p>Have a question or want to work together?</p>
+    <form class="clearfix" method="POST" action="https://formspree.io/f/mqkjyawj">
+        <input type="text" name="name" placeholder="Name" required /><br />
+        <input type="email" name="email" placeholder="Enter your email" required /><br />
+        <textarea name="message" placeholder="Your Message" required></textarea><br />
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock contactMe %}
